@@ -6,7 +6,7 @@ echo 'size::'.$size,'
 
 $data = fread($fp, $size);
 $data = base64_encode( $data );
-echo $data.'
+echo 'data'.$data.'
 =
 ';
 exit(1);
