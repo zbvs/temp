@@ -1,5 +1,5 @@
 <?php
-echo 'start--'
+echo 'start--
 ';
 $fp = fopen('./index.php','r') or die('open fail');
 $size = filesize('./index.php');
